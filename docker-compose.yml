@@ -9,7 +9,9 @@ services:
       # - '443:443' # Public HTTPS Port
       # - '81:81' # Admin Web Port
 
-    network_mode: host
+    # network_mode: host
+    extra_hosts:
+    - "host.docker.internal:host-gateway"
 
     volumes:
       - ./data:/data
