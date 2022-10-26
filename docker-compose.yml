@@ -10,8 +10,8 @@ services:
       - '82:81' # Admin Web Port
 
     # network_mode: host
-    # extra_hosts:
-    # - "host.docker.internal:host-gateway"
+    extra_hosts:
+    - "host.docker.internal:host-gateway"
 
     volumes:
       - ./data:/data
